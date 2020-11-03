@@ -14,6 +14,20 @@
     </li>
 </ul>
 
+ <form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Text1:</label>
+    <input type="text" class="form-control" id="text1">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Text2:</label>
+    <input type="text" class="form-control" id="text2">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Zaškrtnutí</label>
+  </div>
+  <button type="submit" class="btn btn-default">Odeslání</button>
+</form> 
 
 <?php
 // Instrukce k úkolu
