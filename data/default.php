@@ -14,14 +14,19 @@
     </li>
 </ul>
 
- <form action="/action_page.php">
+<h1>Můj formulář</h1>
+<p>
+    Mail jsem naplno pochopil, když jsem spustil váš git na serveru. Je to "prasečinka", ale zapisuje. ;)
+</p>
+
+<form method="POST">
   <div class="form-group">
-    <label for="email">Text1:</label>
-    <input type="text" class="form-control" id="text1">
+    <label for="text1">Text1:</label>
+    <input type="text" class="form-control" name="text1">
   </div>
   <div class="form-group">
-    <label for="pwd">Text2:</label>
-    <input type="text" class="form-control" id="text2">
+    <label for="text2">Text2:</label>
+    <input type="text" class="form-control" name="text2">
   </div>
   <div class="checkbox">
     <label><input type="checkbox"> Zaškrtnutí</label>
@@ -34,3 +39,8 @@
 // Formulář vytvoříte klasicky z HTML
 // Jeho odeslání metodou POST zachytíte jako údaje v objektu REQUEST
 // Data získaná z tohoto objektu zatím stačí pouze zalogovat pomoví Debbugeru
+//$a = $_POST['text1'];
+//print_r($a);
+
+//var_dump($_POST);
+\Tracy\Debugger::log($_POST);
