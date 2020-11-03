@@ -29,7 +29,7 @@
     <input type="text" class="form-control" name="text2">
   </div>
   <div class="checkbox">
-    <label><input type="checkbox"> Zaškrtnutí</label>
+      <label><input type="checkbox" name="zaskrtitko" value="yes"> Zaškrtnutí</label>
   </div>
   <button type="submit" class="btn btn-default">Odeslání</button>
 </form> 
