@@ -14,33 +14,9 @@
     </li>
 </ul>
 
-<h1>Můj formulář</h1>
-<p>
-    Mail jsem naplno pochopil, když jsem spustil váš git na serveru. Je to "prasečinka", ale zapisuje. ;)
-</p>
-
-<form method="POST">
-  <div class="form-group">
-    <label for="text1">Text1:</label>
-    <input type="text" class="form-control" name="text1">
-  </div>
-  <div class="form-group">
-    <label for="text2">Text2:</label>
-    <input type="text" class="form-control" name="text2">
-  </div>
-  <div class="checkbox">
-      <label><input type="checkbox" name="zaskrtitko" value="yes"> Zaškrtnutí</label>
-  </div>
-  <button type="submit" class="btn btn-default">Odeslání</button>
-</form> 
 
 <?php
 // Instrukce k úkolu
 // Formulář vytvoříte klasicky z HTML
 // Jeho odeslání metodou POST zachytíte jako údaje v objektu REQUEST
 // Data získaná z tohoto objektu zatím stačí pouze zalogovat pomoví Debbugeru
-//$a = $_POST['text1'];
-//print_r($a);
-
-//var_dump($_POST);
-\Tracy\Debugger::log($_POST);
