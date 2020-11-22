@@ -18,26 +18,19 @@
     Použijte cyklus FOREACH - jako např. při výpisu menu v souboru head.php-->
     
     <!-- DOPLNĚNÍ ÚKOLU!-->
-    <?php foreach ($text as $key => $hod):?>
+    <?php foreach ($role as $key => $colum):?>
     <tbody>    
         <tr>    
             <th>
-            <?=$hod['id']?>
+            <?=$colum['id']?>
             </th>
             <th>
-            <?=$hod['role']?>
+            <?=$colum['role']?>
             </th>
             <th>
-            <?=$hod['role_name']?>    
+            <?=$colum['role_name']?>    
             </th>
         </tr>
-        
-   
     </tbody>
     <?php endforeach;?>    
-        
-        
-        
-    <!--Zde provedete dynamický výpis dat z proměnné
-    Použijte cyklus FOREACH - jako např. při výpisu menu v souboru head.php-->
 </table>
